@@ -172,6 +172,17 @@ for (let u of roles.keys()) {
 }
 console.log(roles.size);
 
+//產生器
+function* rainbow() {
+    yield 'res';
+    yield 'rds';
+    yield 'ressdf';
+}
+
+for (let color of rainbow()) {
+    console.log(color);
+}
+
 //json(javascript object notation)strigify 格式的字串呼叫
 let otherHat = { ...hat };
 console.log(`OtherHat: ${otherHat.name}, ${otherHat.price}`);
@@ -192,14 +203,3 @@ let testmessage = inp => console.log(`${this.greeting}, ${inp}`);
 
 writeMessage("It is sunny today");
 testmessage("It is rain today")
-
-//產生器
-function* rainbow() {
-    yield 'res';
-    yield 'rds';
-    yield 'ressdf';
-}
-
-for (let color of rainbow()) {
-    console.log(color);
-}
